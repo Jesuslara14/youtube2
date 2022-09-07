@@ -1,0 +1,125 @@
+    
+        body
+        {
+            padding: 0px;
+        }
+
+        nav
+        {
+            position: sticky;
+            top: 3px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: 0px;
+            height: 60px;
+            border-bottom: 1px solid lightgray;
+            background-color: white;
+        }
+
+        .navitem
+        {
+            size-adjust: auto;
+        }
+
+        .videos
+        {
+            border-top: 1px solid lightgray;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            float: left;
+            width: 85%;
+        }
+
+        .video
+        {
+            border: 1px solid lightgray;
+            margin: 10px;
+            width: 250px;
+            height: 150px;
+        }
+
+        .thumbnail
+        {
+        	background-color: gray;
+            width: 100%;
+            height: 66%;
+        }
+
+        .sidenav
+        {
+            width: 15%;
+            height: 700px;
+            background-color: lightgray;
+            float: left;
+        }
+        
+        @media (max-width: 1292px)
+        {
+        	.videos
+        	{
+        		display: grid;
+        		grid-template-columns: auto auto auto;
+        	}
+        }
+        
+        @media (max-width: 950px)
+        {
+        	.videos
+        	{
+        		display: grid;
+        		grid-template-columns: auto auto;
+        	}
+        }
+        
+        @media (max-width: 650px)
+        {
+        	.videos
+        	{
+        		display: flex;
+        		flex-direction: column;
+        		float: right;
+        		width: 83%;
+        	}
+        	
+        	.video
+        	{
+        		width: 100%;
+                height: 250px;
+                margin: 0px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                border-left: none;
+                border-right: none;
+        	}
+        }
+        
+        @media (max-width: 425px)
+        {
+            .videos
+            {
+            	display: flex;
+                flex-direction: column;
+                padding: 0px;
+                width: 100%;
+            }
+
+            .video
+            {
+                width: 100%;
+                height: 150px;
+                margin: 0px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                border-left: none;
+                border-right: none;
+            }
+
+            .sidenav
+            {
+                width: 0px;
+                height: 0px;
+            }
+        }
+
+        
